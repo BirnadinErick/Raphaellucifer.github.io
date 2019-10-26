@@ -1,0 +1,138 @@
+function CallId(id)
+{
+var x=id;
+$(function() {
+    var json = 
+    {
+        "Elements": 
+        [
+        {"AtomicNO":"1","AtomicWeight":"1.0079","ElementName":"Hydrogen","Symbol":"H","MP":"-259","BP":"-253","Density":"0.09","EarthCrust":"0.14","DiscoveryYear":"1776","group":"1","ElectronicConfiguration":"1s1","IonisationEnergy":"13.5984"},
+{"AtomicNO":"2","AtomicWeight":"4.0026","ElementName":"Helium","Symbol":"He","MP":"-272","BP":"-269","Density":"0.18","EarthCrust":"","DiscoveryYear":"1895","group":"18","ElectronicConfiguration":"1s2","IonisationEnergy":"24.5874"},
+{"AtomicNO":"3","AtomicWeight":"6.941","ElementName":"Lithium","Symbol":"Li","MP":"180","BP":"1347","Density":"0.53","EarthCrust":"","DiscoveryYear":"1817","group":"1","ElectronicConfiguration":"[He] 2s1","IonisationEnergy":"5.3917"},
+{"AtomicNO":"4","AtomicWeight":"9.0122","ElementName":"Beryllium","Symbol":"Be","MP":"1278","BP":"2970","Density":"1.85","EarthCrust":"","DiscoveryYear":"1797","group":"2","ElectronicConfiguration":"[He] 2s2","IonisationEnergy":"9.3227"},
+{"AtomicNO":"5","AtomicWeight":"10.811","ElementName":"Boron","Symbol":"B","MP":"2300","BP":"2550","Density":"2.34","EarthCrust":"","DiscoveryYear":"1808","group":"13","ElectronicConfiguration":"[He] 2s2 2p1","IonisationEnergy":"8.298"},
+{"AtomicNO":"6","AtomicWeight":"12.0107","ElementName":"Carbon","Symbol":"C","MP":"3500","BP":"4827","Density":"2.26","EarthCrust":"0.09","DiscoveryYear":"ancient","group":"14","ElectronicConfiguration":"[He] 2s2 2p2","IonisationEnergy":"11.2603"},
+{"AtomicNO":"7","AtomicWeight":"14.0067","ElementName":"Nitrogen","Symbol":"N","MP":"-210","BP":"-196","Density":"1.25","EarthCrust":"","DiscoveryYear":"1772","group":"15","ElectronicConfiguration":"[He] 2s2 2p3","IonisationEnergy":"14.5341"},
+{"AtomicNO":"8","AtomicWeight":"15.9994","ElementName":"Oxygen","Symbol":"O","MP":"-218","BP":"-183","Density":"1.43","EarthCrust":"46.71","DiscoveryYear":"1774","group":"16","ElectronicConfiguration":"[He] 2s2 2p4","IonisationEnergy":"13.6181"},
+{"AtomicNO":"9","AtomicWeight":"18.9984","ElementName":"Fluorine","Symbol":"F","MP":"-220","BP":"-188","Density":"1.7","EarthCrust":"0.03","DiscoveryYear":"1886","group":"17","ElectronicConfiguration":"[He] 2s2 2p5","IonisationEnergy":"17.4228"},
+{"AtomicNO":"10","AtomicWeight":"20.1797","ElementName":"Neon","Symbol":"Ne","MP":"-249","BP":"-246","Density":"0.9","EarthCrust":"","DiscoveryYear":"1898","group":"18","ElectronicConfiguration":"[He] 2s2 2p6","IonisationEnergy":"21.5645"},
+{"AtomicNO":"11","AtomicWeight":"22.9897","ElementName":"Sodium","Symbol":"Na","MP":"98","BP":"883","Density":"0.97","EarthCrust":"2.75","DiscoveryYear":"1807","group":"1","ElectronicConfiguration":"[Ne] 3s1","IonisationEnergy":"5.1391"},
+{"AtomicNO":"12","AtomicWeight":"24.305","ElementName":"Magnesium","Symbol":"Mg","MP":"639","BP":"1090","Density":"1.74","EarthCrust":"2.08","DiscoveryYear":"1755","group":"2","ElectronicConfiguration":"[Ne] 3s2","IonisationEnergy":"7.6462"},
+{"AtomicNO":"13","AtomicWeight":"26.9815","ElementName":"Aluminum","Symbol":"Al","MP":"660","BP":"2467","Density":"2.7","EarthCrust":"8.07","DiscoveryYear":"1825","group":"13","ElectronicConfiguration":"[Ne] 3s2 3p1","IonisationEnergy":"5.9858"},
+{"AtomicNO":"14","AtomicWeight":"28.0855","ElementName":"Silicon","Symbol":"Si","MP":"1410","BP":"2355","Density":"2.33","EarthCrust":"27.69","DiscoveryYear":"1824","group":"14","ElectronicConfiguration":"[Ne] 3s2 3p2","IonisationEnergy":"8.1517"},
+{"AtomicNO":"15","AtomicWeight":"30.9738","ElementName":"Phosphorus","Symbol":"P","MP":"44","BP":"280","Density":"1.82","EarthCrust":"0.13","DiscoveryYear":"1669","group":"15","ElectronicConfiguration":"[Ne] 3s2 3p3","IonisationEnergy":"10.4867"},
+{"AtomicNO":"16","AtomicWeight":"32.065","ElementName":"Sulfur","Symbol":"S","MP":"113","BP":"445","Density":"2.07","EarthCrust":"0.05","DiscoveryYear":"ancient","group":"16","ElectronicConfiguration":"[Ne] 3s2 3p4","IonisationEnergy":"10.36"},
+{"AtomicNO":"17","AtomicWeight":"35.453","ElementName":"Chlorine","Symbol":"Cl","MP":"-101","BP":"-35","Density":"3.21","EarthCrust":"0.05","DiscoveryYear":"1774","group":"17","ElectronicConfiguration":"[Ne] 3s2 3p5","IonisationEnergy":"12.9676"},
+{"AtomicNO":"18","AtomicWeight":"39.948","ElementName":"Argon","Symbol":"Ar","MP":"-189","BP":"-186","Density":"1.78","EarthCrust":"","DiscoveryYear":"1894","group":"18","ElectronicConfiguration":"[Ne] 3s2 3p6","IonisationEnergy":"15.7596"},
+{"AtomicNO":"19","AtomicWeight":"39.0983","ElementName":"Potassium","Symbol":"K","MP":"64","BP":"774","Density":"0.86","EarthCrust":"2.58","DiscoveryYear":"1807","group":"1","ElectronicConfiguration":"[Ar] 4s1","IonisationEnergy":"4.3407"},
+{"AtomicNO":"20","AtomicWeight":"40.078","ElementName":"Calcium","Symbol":"Ca","MP":"839","BP":"1484","Density":"1.55","EarthCrust":"3.65","DiscoveryYear":"1808","group":"2","ElectronicConfiguration":"[Ar] 4s2","IonisationEnergy":"6.1132"},
+{"AtomicNO":"21","AtomicWeight":"44.9559","ElementName":"Scandium","Symbol":"Sc","MP":"1539","BP":"2832","Density":"2.99","EarthCrust":"","DiscoveryYear":"1879","group":"3","ElectronicConfiguration":"[Ar] 3d1 4s2","IonisationEnergy":"6.5615"},
+{"AtomicNO":"22","AtomicWeight":"47.867","ElementName":"Titanium","Symbol":"Ti","MP":"1660","BP":"3287","Density":"4.54","EarthCrust":"0.62","DiscoveryYear":"1791","group":"4","ElectronicConfiguration":"[Ar] 3d2 4s2","IonisationEnergy":"6.8281"},
+{"AtomicNO":"23","AtomicWeight":"50.9415","ElementName":"Vanadium","Symbol":"V","MP":"1890","BP":"3380","Density":"6.11","EarthCrust":"","DiscoveryYear":"1830","group":"5","ElectronicConfiguration":"[Ar] 3d3 4s2","IonisationEnergy":"6.7462"},
+{"AtomicNO":"24","AtomicWeight":"51.9961","ElementName":"Chromium","Symbol":"Cr","MP":"1857","BP":"2672","Density":"7.19","EarthCrust":"0.04","DiscoveryYear":"1797","group":"6","ElectronicConfiguration":"[Ar] 3d5 4s1","IonisationEnergy":"6.7665"},
+{"AtomicNO":"25","AtomicWeight":"54.938","ElementName":"Manganese","Symbol":"Mn","MP":"1245","BP":"1962","Density":"7.43","EarthCrust":"0.09","DiscoveryYear":"1774","group":"7","ElectronicConfiguration":"[Ar] 3d5 4s2","IonisationEnergy":"7.434"},
+{"AtomicNO":"26","AtomicWeight":"55.845","ElementName":"Iron","Symbol":"Fe","MP":"1535","BP":"2750","Density":"7.87","EarthCrust":"5.05","DiscoveryYear":"ancient","group":"8","ElectronicConfiguration":"[Ar] 3d6 4s2","IonisationEnergy":"7.9024"},
+{"AtomicNO":"27","AtomicWeight":"58.9332","ElementName":"Cobalt","Symbol":"Co","MP":"1495","BP":"2870","Density":"8.9","EarthCrust":"","DiscoveryYear":"1735","group":"9","ElectronicConfiguration":"[Ar] 3d7 4s2","IonisationEnergy":"7.881"},
+{"AtomicNO":"28","AtomicWeight":"58.6934","ElementName":"Nickel","Symbol":"Ni","MP":"1453","BP":"2732","Density":"8.9","EarthCrust":"0.02","DiscoveryYear":"1751","group":"10","ElectronicConfiguration":"[Ar] 3d8 4s2","IonisationEnergy":"7.6398"},
+{"AtomicNO":"29","AtomicWeight":"63.546","ElementName":"Copper","Symbol":"Cu","MP":"1083","BP":"2567","Density":"8.96","EarthCrust":"","DiscoveryYear":"ancient","group":"11","ElectronicConfiguration":"[Ar] 3d10 4s1","IonisationEnergy":"7.7264"},
+{"AtomicNO":"30","AtomicWeight":"65.39","ElementName":"Zinc","Symbol":"Zn","MP":"420","BP":"907","Density":"7.13","EarthCrust":"","DiscoveryYear":"ancient","group":"12","ElectronicConfiguration":"[Ar] 3d10 4s2","IonisationEnergy":"9.3942"},
+{"AtomicNO":"31","AtomicWeight":"69.723","ElementName":"Gallium","Symbol":"Ga","MP":"30","BP":"2403","Density":"5.91","EarthCrust":"","DiscoveryYear":"1875","group":"13","ElectronicConfiguration":"[Ar] 3d10 4s2 4p1","IonisationEnergy":"5.9993"},
+{"AtomicNO":"32","AtomicWeight":"72.64","ElementName":"Germanium","Symbol":"Ge","MP":"937","BP":"2830","Density":"5.32","EarthCrust":"","DiscoveryYear":"1886","group":"14","ElectronicConfiguration":"[Ar] 3d10 4s2 4p2","IonisationEnergy":"7.8994"},
+{"AtomicNO":"33","AtomicWeight":"74.9216","ElementName":"Arsenic","Symbol":"As","MP":"81","BP":"613","Density":"5.72","EarthCrust":"","DiscoveryYear":"ancient","group":"15","ElectronicConfiguration":"[Ar] 3d10 4s2 4p3","IonisationEnergy":"9.7886"},
+{"AtomicNO":"34","AtomicWeight":"78.96","ElementName":"Selenium","Symbol":"Se","MP":"217","BP":"685","Density":"4.79","EarthCrust":"","DiscoveryYear":"1817","group":"16","ElectronicConfiguration":"[Ar] 3d10 4s2 4p4","IonisationEnergy":"9.7524"},
+{"AtomicNO":"35","AtomicWeight":"79.904","ElementName":"Bromine","Symbol":"Br","MP":"-7","BP":"59","Density":"3.12","EarthCrust":"","DiscoveryYear":"1826","group":"17","ElectronicConfiguration":"[Ar] 3d10 4s2 4p5","IonisationEnergy":"11.8138"},
+{"AtomicNO":"36","AtomicWeight":"83.8","ElementName":"Krypton","Symbol":"Kr","MP":"-157","BP":"-153","Density":"3.75","EarthCrust":"","DiscoveryYear":"1898","group":"18","ElectronicConfiguration":"[Ar] 3d10 4s2 4p6","IonisationEnergy":"13.9996"},
+{"AtomicNO":"37","AtomicWeight":"85.4678","ElementName":"Rubidium","Symbol":"Rb","MP":"39","BP":"688","Density":"1.63","EarthCrust":"","DiscoveryYear":"1861","group":"1","ElectronicConfiguration":"[Kr] 5s1","IonisationEnergy":"4.1771"},
+{"AtomicNO":"38","AtomicWeight":"87.62","ElementName":"Strontium","Symbol":"Sr","MP":"769","BP":"1384","Density":"2.54","EarthCrust":"","DiscoveryYear":"1790","group":"2","ElectronicConfiguration":"[Kr] 5s2","IonisationEnergy":"5.6949"},
+{"AtomicNO":"39","AtomicWeight":"88.9059","ElementName":"Yttrium","Symbol":"Y","MP":"1523","BP":"3337","Density":"4.47","EarthCrust":"","DiscoveryYear":"1794","group":"3","ElectronicConfiguration":"[Kr] 4d1 5s2","IonisationEnergy":"6.2173"},
+{"AtomicNO":"40","AtomicWeight":"91.224","ElementName":"Zirconium","Symbol":"Zr","MP":"1852","BP":"4377","Density":"6.51","EarthCrust":"0.03","DiscoveryYear":"1789","group":"4","ElectronicConfiguration":"[Kr] 4d2 5s2","IonisationEnergy":"6.6339"},
+{"AtomicNO":"41","AtomicWeight":"92.9064","ElementName":"Niobium","Symbol":"Nb","MP":"2468","BP":"4927","Density":"8.57","EarthCrust":"","DiscoveryYear":"1801","group":"5","ElectronicConfiguration":"[Kr] 4d4 5s1","IonisationEnergy":"6.7589"},
+{"AtomicNO":"42","AtomicWeight":"95.94","ElementName":"Molybdenum","Symbol":"Mo","MP":"2617","BP":"4612","Density":"10.22","EarthCrust":"","DiscoveryYear":"1781","group":"6","ElectronicConfiguration":"[Kr] 4d5 5s1","IonisationEnergy":"7.0924"},
+{"AtomicNO":"43","AtomicWeight":"98","ElementName":"Technetium","Symbol":"Tc","MP":"2200","BP":"4877","Density":"11.5","EarthCrust":"","DiscoveryYear":"1937","group":"7","ElectronicConfiguration":"[Kr] 4d5 5s2","IonisationEnergy":"7.28"},
+{"AtomicNO":"44","AtomicWeight":"101.07","ElementName":"Ruthenium","Symbol":"Ru","MP":"2250","BP":"3900","Density":"12.37","EarthCrust":"","DiscoveryYear":"1844","group":"8","ElectronicConfiguration":"[Kr] 4d7 5s1","IonisationEnergy":"7.3605"},
+{"AtomicNO":"45","AtomicWeight":"102.9055","ElementName":"Rhodium","Symbol":"Rh","MP":"1966","BP":"3727","Density":"12.41","EarthCrust":"","DiscoveryYear":"1803","group":"9","ElectronicConfiguration":"[Kr] 4d8 5s1","IonisationEnergy":"7.4589"},
+{"AtomicNO":"46","AtomicWeight":"106.42","ElementName":"Palladium","Symbol":"Pd","MP":"1552","BP":"2927","Density":"12.02","EarthCrust":"","DiscoveryYear":"1803","group":"10","ElectronicConfiguration":"[Kr] 4d10","IonisationEnergy":"8.3369"},
+{"AtomicNO":"47","AtomicWeight":"107.8682","ElementName":"Silver","Symbol":"Ag","MP":"962","BP":"2212","Density":"10.5","EarthCrust":"","DiscoveryYear":"ancient","group":"11","ElectronicConfiguration":"[Kr] 4d10 5s1","IonisationEnergy":"7.5762"},
+{"AtomicNO":"48","AtomicWeight":"112.411","ElementName":"Cadmium","Symbol":"Cd","MP":"321","BP":"765","Density":"8.65","EarthCrust":"","DiscoveryYear":"1817","group":"12","ElectronicConfiguration":"[Kr] 4d10 5s2","IonisationEnergy":"8.9938"},
+{"AtomicNO":"49","AtomicWeight":"114.818","ElementName":"Indium","Symbol":"In","MP":"157","BP":"2000","Density":"7.31","EarthCrust":"","DiscoveryYear":"1863","group":"13","ElectronicConfiguration":"[Kr] 4d10 5s2 5p1","IonisationEnergy":"5.7864"},
+{"AtomicNO":"50","AtomicWeight":"118.71","ElementName":"Tin","Symbol":"Sn","MP":"232","BP":"2270","Density":"7.31","EarthCrust":"","DiscoveryYear":"ancient","group":"14","ElectronicConfiguration":"[Kr] 4d10 5s2 5p2","IonisationEnergy":"7.3439"},
+{"AtomicNO":"51","AtomicWeight":"121.76","ElementName":"Antimony","Symbol":"Sb","MP":"630","BP":"1750","Density":"6.68","EarthCrust":"","DiscoveryYear":"ancient","group":"15","ElectronicConfiguration":"[Kr] 4d10 5s2 5p3","IonisationEnergy":"8.6084"},
+{"AtomicNO":"52","AtomicWeight":"127.6","ElementName":"Tellurium","Symbol":"Te","MP":"449","BP":"990","Density":"6.24","EarthCrust":"","DiscoveryYear":"1783","group":"16","ElectronicConfiguration":"[Kr] 4d10 5s2 5p4","IonisationEnergy":"9.0096"},
+{"AtomicNO":"53","AtomicWeight":"126.9045","ElementName":"Iodine","Symbol":"I","MP":"114","BP":"184","Density":"4.93","EarthCrust":"","DiscoveryYear":"1811","group":"17","ElectronicConfiguration":"[Kr] 4d10 5s2 5p5","IonisationEnergy":"10.4513"},
+{"AtomicNO":"54","AtomicWeight":"131.293","ElementName":"Xenon","Symbol":"Xe","MP":"-112","BP":"-108","Density":"5.9","EarthCrust":"","DiscoveryYear":"1898","group":"18","ElectronicConfiguration":"[Kr] 4d10 5s2 5p6","IonisationEnergy":"12.1298"},
+{"AtomicNO":"55","AtomicWeight":"132.9055","ElementName":"Cesium","Symbol":"Cs","MP":"29","BP":"678","Density":"1.87","EarthCrust":"","DiscoveryYear":"1860","group":"1","ElectronicConfiguration":"[Xe] 6s1","IonisationEnergy":"3.8939"},
+{"AtomicNO":"56","AtomicWeight":"137.327","ElementName":"Barium","Symbol":"Ba","MP":"725","BP":"1140","Density":"3.59","EarthCrust":"0.05","DiscoveryYear":"1808","group":"2","ElectronicConfiguration":"[Xe] 6s2","IonisationEnergy":"5.2117"},
+{"AtomicNO":"57","AtomicWeight":"138.9055","ElementName":"Lanthanum","Symbol":"La","MP":"920","BP":"3469","Density":"6.15","EarthCrust":"","DiscoveryYear":"1839","group":"3","ElectronicConfiguration":"[Xe] 5d1 6s2","IonisationEnergy":"5.5769"},
+{"AtomicNO":"58","AtomicWeight":"140.116","ElementName":"Cerium","Symbol":"Ce","MP":"795","BP":"3257","Density":"6.77","EarthCrust":"","DiscoveryYear":"1803","group":"101","ElectronicConfiguration":"[Xe] 4f1 5d1 6s2","IonisationEnergy":"5.5387"},
+{"AtomicNO":"59","AtomicWeight":"140.9077","ElementName":"Praseodymium","Symbol":"Pr","MP":"935","BP":"3127","Density":"6.77","EarthCrust":"","DiscoveryYear":"1885","group":"101","ElectronicConfiguration":"[Xe] 4f3 6s2","IonisationEnergy":"5.473"},
+{"AtomicNO":"60","AtomicWeight":"144.24","ElementName":"Neodymium","Symbol":"Nd","MP":"1010","BP":"3127","Density":"7.01","EarthCrust":"","DiscoveryYear":"1885","group":"101","ElectronicConfiguration":"[Xe] 4f4 6s2","IonisationEnergy":"5.525"},
+{"AtomicNO":"61","AtomicWeight":"145","ElementName":"Promethium","Symbol":"Pm","MP":"1100","BP":"3000","Density":"7.3","EarthCrust":"","DiscoveryYear":"1945","group":"101","ElectronicConfiguration":"[Xe] 4f5 6s2","IonisationEnergy":"5.582"},
+{"AtomicNO":"62","AtomicWeight":"150.36","ElementName":"Samarium","Symbol":"Sm","MP":"1072","BP":"1900","Density":"7.52","EarthCrust":"","DiscoveryYear":"1879","group":"101","ElectronicConfiguration":"[Xe] 4f6 6s2","IonisationEnergy":"5.6437"},
+{"AtomicNO":"63","AtomicWeight":"151.964","ElementName":"Europium","Symbol":"Eu","MP":"822","BP":"1597","Density":"5.24","EarthCrust":"","DiscoveryYear":"1901","group":"101","ElectronicConfiguration":"[Xe] 4f7 6s2","IonisationEnergy":"5.6704"},
+{"AtomicNO":"64","AtomicWeight":"157.25","ElementName":"Gadolinium","Symbol":"Gd","MP":"1311","BP":"3233","Density":"7.9","EarthCrust":"","DiscoveryYear":"1880","group":"101","ElectronicConfiguration":"[Xe] 4f7 5d1 6s2","IonisationEnergy":"6.1501"},
+{"AtomicNO":"65","AtomicWeight":"158.9253","ElementName":"Terbium","Symbol":"Tb","MP":"1360","BP":"3041","Density":"8.23","EarthCrust":"","DiscoveryYear":"1843","group":"101","ElectronicConfiguration":"[Xe] 4f9 6s2","IonisationEnergy":"5.8638"},
+{"AtomicNO":"66","AtomicWeight":"162.5","ElementName":"Dysprosium","Symbol":"Dy","MP":"1412","BP":"2562","Density":"8.55","EarthCrust":"","DiscoveryYear":"1886","group":"101","ElectronicConfiguration":"[Xe] 4f10 6s2","IonisationEnergy":"5.9389"},
+{"AtomicNO":"67","AtomicWeight":"164.9303","ElementName":"Holmium","Symbol":"Ho","MP":"1470","BP":"2720","Density":"8.8","EarthCrust":"","DiscoveryYear":"1867","group":"101","ElectronicConfiguration":"[Xe] 4f11 6s2","IonisationEnergy":"6.0215"},
+{"AtomicNO":"68","AtomicWeight":"167.259","ElementName":"Erbium","Symbol":"Er","MP":"1522","BP":"2510","Density":"9.07","EarthCrust":"","DiscoveryYear":"1842","group":"101","ElectronicConfiguration":"[Xe] 4f12 6s2","IonisationEnergy":"6.1077"},
+{"AtomicNO":"69","AtomicWeight":"168.9342","ElementName":"Thulium","Symbol":"Tm","MP":"1545","BP":"1727","Density":"9.32","EarthCrust":"","DiscoveryYear":"1879","group":"101","ElectronicConfiguration":"[Xe] 4f13 6s2","IonisationEnergy":"6.1843"},
+{"AtomicNO":"70","AtomicWeight":"173.04","ElementName":"Ytterbium","Symbol":"Yb","MP":"824","BP":"1466","Density":"6.9","EarthCrust":"","DiscoveryYear":"1878","group":"101","ElectronicConfiguration":"[Xe] 4f14 6s2","IonisationEnergy":"6.2542"},
+{"AtomicNO":"71","AtomicWeight":"174.967","ElementName":"Lutetium","Symbol":"Lu","MP":"1656","BP":"3315","Density":"9.84","EarthCrust":"","DiscoveryYear":"1907","group":"101","ElectronicConfiguration":"[Xe] 4f14 5d1 6s2","IonisationEnergy":"5.4259"},
+{"AtomicNO":"72","AtomicWeight":"178.49","ElementName":"Hafnium","Symbol":"Hf","MP":"2150","BP":"5400","Density":"13.31","EarthCrust":"","DiscoveryYear":"1923","group":"4","ElectronicConfiguration":"[Xe] 4f14 5d2 6s2","IonisationEnergy":"6.8251"},
+{"AtomicNO":"73","AtomicWeight":"180.9479","ElementName":"Tantalum","Symbol":"Ta","MP":"2996","BP":"5425","Density":"16.65","EarthCrust":"","DiscoveryYear":"1802","group":"5","ElectronicConfiguration":"[Xe] 4f14 5d3 6s2","IonisationEnergy":"7.5496"},
+{"AtomicNO":"74","AtomicWeight":"183.84","ElementName":"Tungsten","Symbol":"W","MP":"3410","BP":"5660","Density":"19.35","EarthCrust":"","DiscoveryYear":"1783","group":"6","ElectronicConfiguration":"[Xe] 4f14 5d4 6s2","IonisationEnergy":"7.864"},
+{"AtomicNO":"75","AtomicWeight":"186.207","ElementName":"Rhenium","Symbol":"Re","MP":"3180","BP":"5627","Density":"21.04","EarthCrust":"","DiscoveryYear":"1925","group":"7","ElectronicConfiguration":"[Xe] 4f14 5d5 6s2","IonisationEnergy":"7.8335"},
+{"AtomicNO":"76","AtomicWeight":"190.23","ElementName":"Osmium","Symbol":"Os","MP":"3045","BP":"5027","Density":"22.6","EarthCrust":"","DiscoveryYear":"1803","group":"8","ElectronicConfiguration":"[Xe] 4f14 5d6 6s2","IonisationEnergy":"8.4382"},
+{"AtomicNO":"77","AtomicWeight":"192.217","ElementName":"Iridium","Symbol":"Ir","MP":"2410","BP":"4527","Density":"22.4","EarthCrust":"","DiscoveryYear":"1803","group":"9","ElectronicConfiguration":"[Xe] 4f14 5d7 6s2","IonisationEnergy":"8.967"},
+{"AtomicNO":"78","AtomicWeight":"195.078","ElementName":"Platinum","Symbol":"Pt","MP":"1772","BP":"3827","Density":"21.45","EarthCrust":"","DiscoveryYear":"1735","group":"10","ElectronicConfiguration":"[Xe] 4f14 5d9 6s1","IonisationEnergy":"8.9587"},
+{"AtomicNO":"79","AtomicWeight":"196.9665","ElementName":"Gold","Symbol":"Au","MP":"1064","BP":"2807","Density":"19.32","EarthCrust":"","DiscoveryYear":"ancient","group":"11","ElectronicConfiguration":"[Xe] 4f14 5d10 6s1","IonisationEnergy":"9.2255"},
+{"AtomicNO":"80","AtomicWeight":"200.59","ElementName":"Mercury","Symbol":"Hg","MP":"-39","BP":"357","Density":"13.55","EarthCrust":"","DiscoveryYear":"ancient","group":"12","ElectronicConfiguration":"[Xe] 4f14 5d10 6s2","IonisationEnergy":"10.4375"},
+{"AtomicNO":"81","AtomicWeight":"204.3833","ElementName":"Thallium","Symbol":"Tl","MP":"303","BP":"1457","Density":"11.85","EarthCrust":"","DiscoveryYear":"1861","group":"13","ElectronicConfiguration":"[Xe] 4f14 5d10 6s2 6p1","IonisationEnergy":"6.1082"},
+{"AtomicNO":"82","AtomicWeight":"207.2","ElementName":"Lead","Symbol":"Pb","MP":"327","BP":"1740","Density":"11.35","EarthCrust":"","DiscoveryYear":"ancient","group":"14","ElectronicConfiguration":"[Xe] 4f14 5d10 6s2 6p2","IonisationEnergy":"7.4167"},
+{"AtomicNO":"83","AtomicWeight":"208.9804","ElementName":"Bismuth","Symbol":"Bi","MP":"271","BP":"1560","Density":"9.75","EarthCrust":"","DiscoveryYear":"ancient","group":"15","ElectronicConfiguration":"[Xe] 4f14 5d10 6s2 6p3","IonisationEnergy":"7.2856"},
+{"AtomicNO":"84","AtomicWeight":"209","ElementName":"Polonium","Symbol":"Po","MP":"254","BP":"962","Density":"9.3","EarthCrust":"","DiscoveryYear":"1898","group":"16","ElectronicConfiguration":"[Xe] 4f14 5d10 6s2 6p4","IonisationEnergy":"8.417"},
+{"AtomicNO":"85","AtomicWeight":"210","ElementName":"Astatine","Symbol":"At","MP":"302","BP":"337","Density":"","EarthCrust":"","DiscoveryYear":"1940","group":"17","ElectronicConfiguration":"[Xe] 4f14 5d10 6s2 6p5","IonisationEnergy":"9.3"},
+{"AtomicNO":"86","AtomicWeight":"222","ElementName":"Radon","Symbol":"Rn","MP":"-71","BP":"-62","Density":"9.73","EarthCrust":"","DiscoveryYear":"1900","group":"18","ElectronicConfiguration":"[Xe] 4f14 5d10 6s2 6p6","IonisationEnergy":"10.7485"},
+{"AtomicNO":"87","AtomicWeight":"223","ElementName":"Francium","Symbol":"Fr","MP":"27","BP":"677","Density":"","EarthCrust":"","DiscoveryYear":"1939","group":"1","ElectronicConfiguration":"[Rn] 7s1","IonisationEnergy":"4.0727"},
+{"AtomicNO":"88","AtomicWeight":"226","ElementName":"Radium","Symbol":"Ra","MP":"700","BP":"1737","Density":"5.5","EarthCrust":"","DiscoveryYear":"1898","group":"2","ElectronicConfiguration":"[Rn] 7s2","IonisationEnergy":"5.2784"},
+{"AtomicNO":"89","AtomicWeight":"227","ElementName":"Actinium","Symbol":"Ac","MP":"1050","BP":"3200","Density":"10.07","EarthCrust":"","DiscoveryYear":"1899","group":"3","ElectronicConfiguration":"[Rn] 6d1 7s2","IonisationEnergy":"5.17"},
+{"AtomicNO":"90","AtomicWeight":"232.0381","ElementName":"Thorium","Symbol":"Th","MP":"1750","BP":"4790","Density":"11.72","EarthCrust":"","DiscoveryYear":"1829","group":"102","ElectronicConfiguration":"[Rn] 6d2 7s2","IonisationEnergy":"6.3067"},
+{"AtomicNO":"91","AtomicWeight":"231.0359","ElementName":"Protactinium","Symbol":"Pa","MP":"1568","BP":"","Density":"15.4","EarthCrust":"","DiscoveryYear":"1913","group":"102","ElectronicConfiguration":"[Rn] 5f2 6d1 7s2","IonisationEnergy":"5.89"},
+{"AtomicNO":"92","AtomicWeight":"238.0289","ElementName":"Uranium","Symbol":"U","MP":"1132","BP":"3818","Density":"18.95","EarthCrust":"","DiscoveryYear":"1789","group":"102","ElectronicConfiguration":"[Rn] 5f3 6d1 7s2","IonisationEnergy":"6.1941"},
+{"AtomicNO":"93","AtomicWeight":"237","ElementName":"Neptunium","Symbol":"Np","MP":"640","BP":"3902","Density":"20.2","EarthCrust":"","DiscoveryYear":"1940","group":"102","ElectronicConfiguration":"[Rn] 5f4 6d1 7s2","IonisationEnergy":"6.2657"},
+{"AtomicNO":"94","AtomicWeight":"244","ElementName":"Plutonium","Symbol":"Pu","MP":"640","BP":"3235","Density":"19.84","EarthCrust":"","DiscoveryYear":"1940","group":"102","ElectronicConfiguration":"[Rn] 5f6 7s2","IonisationEnergy":"6.0262"},
+{"AtomicNO":"95","AtomicWeight":"243","ElementName":"Americium","Symbol":"Am","MP":"994","BP":"2607","Density":"13.67","EarthCrust":"","DiscoveryYear":"1944","group":"102","ElectronicConfiguration":"[Rn] 5f7 7s2","IonisationEnergy":"5.9738"},
+{"AtomicNO":"96","AtomicWeight":"247","ElementName":"Curium","Symbol":"Cm","MP":"1340","BP":"","Density":"13.5","EarthCrust":"","DiscoveryYear":"1944","group":"102","ElectronicConfiguration":"","IonisationEnergy":"5.9915"},
+{"AtomicNO":"97","AtomicWeight":"247","ElementName":"Berkelium","Symbol":"Bk","MP":"986","BP":"","Density":"14.78","EarthCrust":"","DiscoveryYear":"1949","group":"102","ElectronicConfiguration":"","IonisationEnergy":"6.1979"},
+{"AtomicNO":"98","AtomicWeight":"251","ElementName":"Californium","Symbol":"Cf","MP":"900","BP":"","Density":"15.1","EarthCrust":"","DiscoveryYear":"1950","group":"102","ElectronicConfiguration":"","IonisationEnergy":"6.2817"},
+{"AtomicNO":"99","AtomicWeight":"252","ElementName":"Einsteinium","Symbol":"Es","MP":"860","BP":"","Density":"","EarthCrust":"","DiscoveryYear":"1952","group":"102","ElectronicConfiguration":"","IonisationEnergy":"6.42"},
+{"AtomicNO":"100","AtomicWeight":"257","ElementName":"Fermium","Symbol":"Fm","MP":"1527","BP":"","Density":"","EarthCrust":"","DiscoveryYear":"1952","group":"102","ElectronicConfiguration":"","IonisationEnergy":"6.5"},
+{"AtomicNO":"101","AtomicWeight":"258","ElementName":"Mendelevium","Symbol":"Md","MP":"","BP":"","Density":"","EarthCrust":"","DiscoveryYear":"1955","group":"102","ElectronicConfiguration":"","IonisationEnergy":"6.58"},
+{"AtomicNO":"102","AtomicWeight":"259","ElementName":"Nobelium","Symbol":"No","MP":"827","BP":"","Density":"","EarthCrust":"","DiscoveryYear":"1958","group":"102","ElectronicConfiguration":"","IonisationEnergy":"6.65"},
+{"AtomicNO":"103","AtomicWeight":"262","ElementName":"Lawrencium","Symbol":"Lr","MP":"1627","BP":"","Density":"","EarthCrust":"","DiscoveryYear":"1961","group":"102","ElectronicConfiguration":"","IonisationEnergy":"4.9"},
+{"AtomicNO":"104","AtomicWeight":"261","ElementName":"Rutherfordium","Symbol":"Rf","MP":"","BP":"","Density":"","EarthCrust":"","DiscoveryYear":"1964","group":"4","ElectronicConfiguration":"","IonisationEnergy":""},
+{"AtomicNO":"105","AtomicWeight":"262","ElementName":"Dubnium","Symbol":"Db","MP":"","BP":"","Density":"","EarthCrust":"","DiscoveryYear":"1967","group":"5","ElectronicConfiguration":"","IonisationEnergy":""},
+{"AtomicNO":"106","AtomicWeight":"266","ElementName":"Seaborgium","Symbol":"Sg","MP":"","BP":"","Density":"","EarthCrust":"","DiscoveryYear":"1974","group":"6","ElectronicConfiguration":"","IonisationEnergy":""},
+{"AtomicNO":"107","AtomicWeight":"264","ElementName":"Bohrium","Symbol":"Bh","MP":"","BP":"","Density":"","EarthCrust":"","DiscoveryYear":"1981","group":"7","ElectronicConfiguration":"","IonisationEnergy":""},
+{"AtomicNO":"108","AtomicWeight":"277","ElementName":"Hassium","Symbol":"Hs","MP":"","BP":"","Density":"","EarthCrust":"","DiscoveryYear":"1984","group":"8","ElectronicConfiguration":"","IonisationEnergy":""},
+{"AtomicNO":"109","AtomicWeight":"268","ElementName":"Meitnerium","Symbol":"Mt","MP":"","BP":"","Density":"","EarthCrust":"","DiscoveryYear":"1982","group":"9","ElectronicConfiguration":"","IonisationEnergy":""}
+        ]
+    };
+    $.each(json.Elements, function(i, v) {
+        if (v.Symbol == x) {
+            document.getElementById("Symbol").innerHTML=v.Symbol;
+            document.getElementById("AtomicNO").innerHTML=v.AtomicNO;
+            document.getElementById("AtomicWeight").innerHTML=v.AtomicWeight;
+            document.getElementById("ElementName").innerHTML=v.ElementName;
+            document.getElementById("MP").innerHTML=v.MP;
+            document.getElementById("BP").innerHTML=v.BP;
+            document.getElementById("Density").innerHTML=v.Density;
+            document.getElementById("EarthCrust").innerHTML=v.EarthCrust;
+            document.getElementById("DiscoveryYear").innerHTML=v.DiscoveryYear;
+            document.getElementById("group").innerHTML=v.group;
+            document.getElementById("ElectronicConfiguration").innerHTML=v.ElectronicConfiguration;
+            document.getElementById("IonisationEnergy").innerHTML=v.IonisationEnergy;
+            return;
+        }
+    });
+});
+}
