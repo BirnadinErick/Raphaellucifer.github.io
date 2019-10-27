@@ -1192,7 +1192,8 @@ label {
     color: #31353a;
     border-color: #31353a; }
 .light .menu-trigger .bar {
-  background: #31353a; }
+  background: #31353a;
+   }
 .light .menu-trigger.active .bar {
   background: #fff; }
 .light a.brand {

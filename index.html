@@ -18,6 +18,7 @@
   <link href="stylesheets/bootstrap.css" rel="stylesheet" type="text/css" />
   <link href="stylesheets/font-awesome.css" rel="stylesheet" type="text/css" />
   <link href="stylesheets/style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="styleExtras.css" type="text/css">
   <!-- HTML5 fallbacks -->
   <!--[if lt IE 9]>
     <script src="javascripts/html5shiv.js" type="text/javascript"></script>
@@ -28,26 +29,19 @@
 <body class='dark bottom-nav'>
   <div class='container-fluid'>
     <header data-spy='affix'>
-      <div class='menu-trigger'>
-        <div class='bar'></div>
-        <div class='bar'></div>
-        <div class='bar'></div>
-      </div>
-      <a class='brand transition' href='index.html' style='background-image:url(logo_BG.png);'></a>
-      <nav id='main'>
-        <div class='nav'>
-        </div>
-      </nav>
+
+      <a class='brand transition' href='index.html' style='background-image:url(images/logo_BG.png);'></a>
     </header>
     <div class='slider'>
       <ul class='slides'>
         <li class='slide dark'>
           <div class='jumbotron'>
-            <div class='bg' style='background-image: url(BG_1.jpg);'></div>
+            <div class='bg' style='background-image: url(images/BG_1.jpg);'></div>
             <div class='content vcenter'>
               <div class='row'>
                 <div class='col-md-6 col-md-offset-3 text-center'>
-                  <h1>Tailor chemistry with your chore acts in a simple way</h1>
+
+                  <h1 class="hero-text"><b>Tailor chemistry with your chore acts in a simple way</b></h1>
                 </div>
               </div>
             </div>
@@ -55,11 +49,11 @@
         </li>
         <li class='slide dark'>
           <div class='jumbotron'>
-            <div class='bg faded animated' style='background-image: url(BG_2.jpg);'></div>
+            <div class='bg faded animated' style='background-image: url(images/BG_2.jpg);'></div>
             <div class='content vcenter'>
               <div class='row'>
                 <div class='col-md-6 col-md-offset-3 text-center'>
-                  <h1>Come let's study chemistry in a whole different way, not just like the old clasic way</h1>
+                  <h1>Come let's study chemistry in a whole different way, not just like the old classic way</h1>
                   <a class='btn transition' href='#'>Explore More</a>
                 </div>
               </div>
@@ -68,7 +62,7 @@
         </li>
         <li class='slide dark'>
           <div class='jumbotron'>
-            <div class='bg faded animated' style='background-image: url(logo.png);'></div>
+            <div class='bg faded animated' style='background-image: url(images/logo.png);'></div>
             <div class='content vcenter'>
               <div class='row'>
                 <div class='col-md-6 col-md-offset-3 text-center'>
@@ -81,11 +75,11 @@
         </li>
       </ul>
     </div>
-    <section id='start'>
+    <section id='start' class="bg-dark">
       <div class='row'>
         <div class='col-md-6 mobile-center'>
           <h4 class='subtitle'>Est. 2019</h4>
-          <h2>Chemie Tudor is a whole different dimension</h2>
+          <h2 class="card-text">Chemie Tudor is a whole different dimension</h2>
         </div>
         <div class='col-md-2 text-center service'>
           <div class='fa fa-2x fa-mobile-phone'></div>
@@ -101,107 +95,121 @@
         </div>
       </div>
     </section>
-    <section class='gray'>
+    <section class='gray' style="background-image: url(images/BG-3.jpg);">
       <div class='content text-center'>
         <div class='row'>
           <div class='col-md-12 title-block'>
-            <h2>What have we done</h2>
+            <h2><b><u>What have we done</u></b></h2>
           </div>
         </div>
         <div class='row'>
           <div class='col-md-3 service'>
             <div class='fa fa-file-archive-o fa-2x'></div>
-            <h3>Perioitic table modernized</h3>
-            <p>No more old and weary classic paper mode with periotic tables. We have made the paper a DIGITAL.</p>
+            <h3>Everything zipped</h3>
+            <p>Now you don't have to go around the internet to get neccessary informations you need to get on an elemnt
+              in the periotic table. It's all in one place.</p>
           </div>
           <div class='col-md-3 service'>
-            <div class='fa fa-venus-mars fa-2x'></div>
+            <div class='fa fa-android fa-2x'></div>
+            <div class='fa fa-apple fa-2x'></div>
             <h3>Universal</h3>
-            <p>If you are going to use a passage of Lorem Ipsum, you need to be sure.</p>
+            <p>Not only with iOS, Chemie Tutor continous on the androids also.</p>
           </div>
           <div class='col-md-3 service'>
             <div class='fa fa-shield fa-2x'></div>
-            <h3>Secure</h3>
-            <p>If you are going to use a passage of Lorem Ipsum, you need to be sure.</p>
+            <h3>Trusted</h3>
+            <p>Every informations on the app are hand searched by our team spending lots of time to gather the
+              information and cross-checking it with trusted sources.</p>
           </div>
           <div class='col-md-3 service'>
             <div class='fa fa fa-cloud fa-2x'></div>
-            <h3>Cloud hosting</h3>
-            <p>If you are going to use a passage of Lorem Ipsum, you need to be sure.</p>
+            <h3>Anywhere Anytime</h3>
+            <p>Chemie Tutor is a web based, neither system-based nor OS-based. You can get the app ANYWHERE &amp;
+              ANYTIME you want.</p>
           </div>
         </div>
       </div>
     </section>
-    <section class='bg-darker'>
-      <div class='bg' style='background-image: url(images/work/12.jpg);'></div>
+    <section class='bg'>
+      <div class='bg' style='background-image: url(images/BG_4.jpg);'></div>
       <div class='content'>
         <div class='row'>
           <div class='col-md-6'>
-            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
-              in some form, by injected humour, or randomised words which</p>
+            <p style="font-size: 25px; color: rgb(17, 17, 17);"><b>We all are studying somethimg daily but, for what?
+                for exam? Nah. We should study for our life and it will bring everything well in the examinations.
+                That's why we've made this CHEMIE TUTOR. </b>
+            </p>
           </div>
           <div class='col-md-6'>
-            <p>don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be
-              sure there isn't anything embarrassing hidden in the middle of text.</p>
+            <p style="font-size: 25px; color: white;"><b>This will help you
+                with your life by satnding and being there for you ANYWHERE &AMP; ANYTIME. You can totally trust the
+                informations in the table. Have a nice day. Happy Chemistry-ing &nbsp;;)</b></p>
           </div>
         </div>
       </div>
     </section>
+    <section style="background-color: #1d1d1d;">
+      <div class="header" style="background-color: rgb(253, 253, 253);">
+        <h2 style="text-align: center; font-family: cursive; font-size: 50px;"><b>Our Legendary Team</b></h2>
+      </div>
+    </section>
     <section class='no-spacing col-3' id='grid'>
-      <a class='item abstract lightbox' href='https://www.youtube.com/embed/vSkb0kDacjs'
-        style='background-image: url(images/work/02.jpg);'>
+
+      <a class='item abstract lightbox' href='#' style='background-image: url(images/ALE_Logo.jpg);'>
         <div class='caption'>
-          <h5 class='extra'>YouTube</h5>
+          <h5 class='extra'>Sponsorship</h5>
           <div class='titles'>
-            <h3 class='title'>YouTube example</h3>
-            <h4 class='subtitle'>This is an example subtitle</h4>
+            <h3 class='title'>American Legendary Eagles</h3>
+            <h4 class='subtitle'>This is a non-profit org that conribute tech wise ;)</h4>
           </div>
         </div>
       </a>
-      <a class='item abstract lightbox' href='//player.vimeo.com/video/44228708'
-        style='background-image: url(images/work/01.jpg);'>
+      <a class='item abstract lightbox' href='#' style='background-image: url(images/School_Logo.jpg);'>
         <div class='caption'>
-          <h5 class='extra'>Vimeo</h5>
+          <h5 class='extra'>In Association with</h5>
           <div class='titles'>
-            <h3 class='title'>Vimeo example</h3>
-            <h4 class='subtitle'>This is an example subtitle</h4>
+            <h3 class='title'>St. Patrick's College</h3>
+            <h4 class='subtitle'>We are so proud to show our Alma Mater:)</h4>
           </div>
         </div>
       </a>
-      <a class='item threedee typography lightbox' href='images/work/03.jpg'
-        style='background-image: url(images/work/03.jpg);'>
+      <a class='item threedee typography lightbox' href='#' style='background-image: url(images/nitharshan.jpg);'>
         <div class='caption'>
-          <h5 class='extra'>Some extra field</h5>
+          <h5 class='extra'>Team Leader</h5>
           <div class='titles'>
-            <h3 class='title'>Romeo &amp; Juliet</h3>
-            <h4 class='subtitle'>This is an example subtitle</h4>
+            <h3 class='title'>Nitharshan</h3>
+            <h4 class='subtitle'>Just like his favourite char our leader just bomb-bards every thread that comes in a
+              way and keep moving forward</h4>
           </div>
         </div>
       </a>
-      <a class='item threedee lightbox' href='images/work/04.jpg' style='background-image: url(images/work/04.jpg);'>
+      <a class='item threedee lightbox' href='#' style='background-image: url(images/raguthas.jpg);'>
         <div class='caption'>
-          <h5 class='extra'>Some extra field</h5>
+          <h5 class='extra'>Assistant Team Lead</h5>
           <div class='titles'>
-            <h3 class='title'>American Express</h3>
-            <h4 class='subtitle'>This is an example subtitle</h4>
+            <h3 class='title'>Raguthas</h3>
+            <h4 class='subtitle'>He is a 'deadpool' for all failures, just like Deadpool whatever makes us bleed he made
+              us heal it through and kept us strong.</h4>
           </div>
         </div>
       </a>
-      <a class='item lightbox threedee' href='images/work/05.jpg' style='background-image: url(images/work/05.jpg);'>
+      <a class='item lightbox threedee' href='#' style='background-image: url(images/praveen.jpg);'>
         <div class='caption'>
-          <h5 class='extra'>Some extra field</h5>
+          <h5 class='extra'>Core Developer</h5>
           <div class='titles'>
-            <h3 class='title'>Sting banana</h3>
-            <h4 class='subtitle'>This is an example subtitle</h4>
+            <h3 class='title'>Eric Praveen</h3>
+            <h4 class='subtitle'>We have a great coder who created all these core codes that helps you now with his
+              hammer like brain which also thunders the field.</h4>
           </div>
         </div>
       </a>
-      <a class='item lightbox typography' href='images/work/08.jpg' style='background-image: url(images/work/08.jpg);'>
+      <a class='item lightbox typography' href='images/work/08.jpg' style='background-image: url(images/erick.jpg);'>
         <div class='caption'>
-          <h5 class='extra'>Some extra field</h5>
+          <h5 class='extra'>UI/UX Developer</h5>
           <div class='titles'>
-            <h3 class='title'>To the crazy ones</h3>
-            <h4 class='subtitle'>This is an example subtitle</h4>
+            <h3 class='title'>Birnadin Erick</h3>
+            <h4 class='subtitle'>Just like my favorite Marvel<sup>&reg;</sup> char I am crazy enough to die for the
+              tech.</h4>
           </div>
         </div>
       </a>
@@ -210,70 +218,71 @@
       <div class='content row'>
         <div class='col-md-6 col-md-offset-3'>
           <h2>Visions</h2>
-          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
-            in some form, by injected humour, or randomised words which don't look even slightly believable. If you are
-            going to use a super short <a href="#">passage of Lorem Ipsum</a>, you need to be sure there isn't anything
-            embarrassing hidden in the middle of text.</p>
-          <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this
-            the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a
-            handful of model sentence structures.</p>
+          <p style="color: white; text-align: justify;">We are actually Patricians who always make our Alma Mater proud.
+            Our Alma Mater's
+            Vision is that
+            <q style="font-style: italic; color: crimson;">Pursuing Excellence in Education and Character.</q> That's
+            why we have made
+            this Chemie Tudor to make you
+            all also to pursue the Excelence in Wducation in a digital wise.</p>
+          <div class="bottom-line"></div>
+
+
+          <h2>Mission</h2>
+          <p style="color: white; text-align: justify;"><q style="font-style: italic; color: crimson;">Total Commitment
+              and Optimal Use of the resources to obtain the
+              Best quality in Everyone.</q> This is the mission of our Alma Mater, so we have inherit that here and we
+            mission
+            to use the total and optimal use of tech to bring the best out of You!</p>
         </div>
       </div>
     </section>
-    <section class='bg-darker'>
-      <div class='bg' style='background-image: url(images/work/13.jpg);'></div>
+    <section class='bg'>
+      <div class='bg' style='background-image: url(images/BG_Quote.jpg);'></div>
       <div class='row'>
         <div class='col-md-10'>
-          <blockquote class='text-center'>Contrary to popular belief, Lorem Ipsum is not simply random text. It has
-            roots in a piece of classical Latin literature from 45 BC.</blockquote>
+          <blockquote class='text-center' style="font-size: 50px; text-align: center;">Chemistry was actually come from
+            Alchemy which has
+            its roots in the early
+            Egyptian Era!</blockquote>
         </div>
         <div class='col-md-2 mobile-center'>
-          <img style="width: 100px;" alt="" src="images/logo-b.svg" />
+          <img style="width: 250px;" alt="" src="images/logo.png" />
         </div>
       </div>
     </section>
-    <footer>
+    <footer class="bg-darker">
       <div class='row text-center'>
         <div class='col-md-4'>
           <div class='fa fa-building-o'></div>
           <p>
-            Belane 404<br>
-            1234 AB Amsterdam
+            St. Patrick's College,<br>
+            St. Patrick's Rd, Jaffna, <br>
+            40 000 Sri Lanka.
           </p>
         </div>
         <div class='col-md-4'>
           <div class='fa fa-phone'></div>
           <p>
-            (12) 345 678 000<br>
-            (34) 567 890 000
+            (94) 76 581 2511 : B. E. <br>
+            (94) 76 464 2722 : Nitharshan
           </p>
         </div>
         <div class='col-md-4'>
           <div class='fa fa-envelope-o'></div>
           <p>
-            sales@themanoid.com <br>
-            support@themanoid.com
+            chemietutor@gmail.com<br>
+            Send us the problems you encountered or questions.
           </p>
         </div>
-      </div>
-    </footer>
-    <footer class='gray text-center'>
-      <div class='row'>
-        <div class='col-md-12'>
-          <a class='icon fa fa-twitter' href='#'></a>
-          <a class='icon fa fa-behance' href='#'></a>
-          <a class='icon fa fa-codepen' href='#'></a>
-          <a class='icon fa fa-stumbleupon' href='#'></a>
-          <a class='icon fa fa-facebook' href='#'></a>
-          <a class='icon fa fa-linkedin' href='#'></a>
+        <div class="row"></div>
+        <div class='row'>
+          <div class='col-md-12'>
+            <div class='copy'>&copy; 2019 ALE. All Rights Reserved.</div>
+          </div>
         </div>
-      </div>
-      <div class='row'>
-        <div class='col-md-12'>
-          <div class='copy'>&copy; 2015 Be. All Rights Reserved.</div>
-        </div>
-      </div>
     </footer>
+
   </div>
   <script src="javascripts/jquery.min.js" type="text/javascript"></script>
   <script src="javascripts/jquery.easing.1.3.js" type="text/javascript"></script>
